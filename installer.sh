@@ -20,6 +20,6 @@
             
             cd
               
-              mv Ansi NukkitX
+              mv Ni-Installer NukkitX
           
           echo 'Use The cd ../NukkitX && ./run.sh'           
