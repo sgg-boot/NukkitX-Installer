@@ -1,8 +1,8 @@
 ﻿#!/bin/bash
-  apt install openjdk-8-jdk openjdk-8-jre wget
-  apt install default-jdk default-jre wget
+  sudo apt install openjdk-8-jdk openjdk-8-jre wget
+  sudo apt install default-jdk default-jre wget
     
-    pacman -S jdk8-openjdk jre-openjdk wget
+    sudo pacman -S jdk8-openjdk jre-openjdk wget
       
       rm -rf *
         
