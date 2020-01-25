@@ -23,3 +23,4 @@
               mv Ni-Installer NukkitX
           
           echo 'Use The cd ../NukkitX && ./run.sh'           
+                sudo archlinux-java set java-8-openjdk
