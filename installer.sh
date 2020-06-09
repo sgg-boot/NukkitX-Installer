@@ -26,7 +26,7 @@
  cd ~/NukkitX-Server
  
 #Removing the installation folder
- rm -rf ~/NukkitX-Installer
+ rm ~/NukkitX-Installer
 
 #Getting .Jar
  wget -q -O NukkitX.jar https://ci.nukkitx.com/job/NukkitX/job/Nukkit/job/2.0/lastSuccessfulBuild/artifact/target/Nukkit.jar
@@ -39,24 +39,23 @@
  echo ' echo 'Starting Server'' >> start.sh
  echo '' >> start.sh
  echo '#Starting Java' >> start.sh
- echo ' java -Xmx1024M -Xms1024M -jar NukkitX.jar' >> start.sh
+ echo ' java -Xmx1024M -Xms1024M -jar ~/NukkitX-Server/NukkitX.jar' >> start.sh
  echo '' >> start.sh
  echo '#Stopping Server Message' >> start.sh
- echo ' echo 'Stopping Server''
+ echo ' echo 'Stopping Server'' >> start.sh
  
 #Creating Update File
  echo '#Linux Bin / Bash' >> update.sh
  echo ' #!/bin/bash' >> update.sh
-echo ''
-echo '#Update Started Message'
-echo ' echo 'Update Started''
+ echo '' >> update.sh
+ echo '#Update Started Message' >> update.sh
+ echo ' echo 'Update Started'' >> update.sh
  echo '' >> update.sh
  echo '#Replacing .Jar' >> update.sh
  echo ' wget -q -O NukkitX.jar https://ci.nukkitx.com/job/NukkitX/job/Nukkit/job/2.0/lastSuccessfulBuild/artifact/target/Nukkit.jar' >> update.sh
  echo '' >> update.sh
- echo '#Update Complete Message'
- echo ' echo 'Update Complete'
+ echo '#Update Complete Message'  >> update.sh
+ echo ' echo 'Update Complete' >> update.sh
  
 #Returning To / Home
  cd ~
- 
