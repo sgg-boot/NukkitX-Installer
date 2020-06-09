@@ -1,6 +1,9 @@
 #Linux Bash
  #!/bin/bash
 
+#Rename
+mv ~/NukkitX-Installer.git NukkitX-Installer
+
 #Installing Java/Wget
  
 #On Arch-Linux
