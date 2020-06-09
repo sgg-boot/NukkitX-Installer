@@ -26,7 +26,7 @@
  cd ~/NukkitX-Server
  
 #Removing the installation folder
- rm ~/NukkitX-Installer
+ rm -rf ~/NukkitX-Installer
 
 #Getting .Jar
  wget -q -O NukkitX.jar https://ci.nukkitx.com/job/NukkitX/job/Nukkit/job/2.0/lastSuccessfulBuild/artifact/target/Nukkit.jar
